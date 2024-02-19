@@ -31,3 +31,5 @@ class Grammar:
     def __replace(self, value: list) -> str:
         # Choose random from values of dictionary of given char
         return random.choice(value)
+
+

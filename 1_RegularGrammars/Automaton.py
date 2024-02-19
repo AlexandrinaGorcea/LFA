@@ -33,3 +33,4 @@ class FiniteAutomaton:
             current_state = self.delta[current_state][char]
 
         return current_state in self.F
+
