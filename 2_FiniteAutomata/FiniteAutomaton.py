@@ -1,5 +1,5 @@
 from functools import reduce
-# grammar.py
+# Grammar.py
 from common import Grammar
 
 class FiniteAutomaton:
