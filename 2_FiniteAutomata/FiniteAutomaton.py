@@ -15,7 +15,6 @@ class FiniteAutomaton:
             next_states = {next_state for (state, input_symbol, next_state) in self.delta
                            if state == current_state and input_symbol == symbol}
             return next_states.pop() if next_states else None
-
         final_state = reduce(transition, input_string, self.q0)
         return final_state in self.F
 
