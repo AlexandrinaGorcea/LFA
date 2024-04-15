@@ -201,6 +201,5 @@ if __name__ == "__main__":
     }
 
     grammar = Grammar(Vn, Vt, P)
-    # grammar = Grammar(variants.Vn13, variants.Vt13, variants.P13)
     grammar.to_ChomskyNormalForm()
     grammar.print_grammar()
