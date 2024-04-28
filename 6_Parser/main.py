@@ -11,13 +11,14 @@ def build_graph(node, graph):
         build_graph(child, graph)
 
 
+
 python_program = '''
-def sum_list(numbers):
-    total = 0
-    for num in numbers:
-        total = total + num
-    return total
-'''
+def calculate_area(radius):
+    pi = 3.14
+    area = pi * (radius ** 2)
+    return area
+    '''
+
 lexer_11 = lexer.Lexer(python_program)
 tokens = lexer_11.get_tokens_with_regex()
 for token in tokens:
